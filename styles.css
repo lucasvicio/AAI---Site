@@ -1,0 +1,145 @@
+:root {
+    --cor-padrao-1: #05072F;
+    --cor-padrao-2: #01041B;
+    --cor-vermelho: #cf092d;
+    --cor-botao-padrao: #400093;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-weight: 800;
+    margin: 0;
+    background-color: var(--cor-padrao-2);
+    max-height: 100vh;
+}
+
+.header {
+    max-width: 100vw;
+    display: flex;
+    background-color: var(--cor-padrao-1);
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.header h1,h2,h3,h4,span{
+    margin:0;
+    cursor:pointer;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    overflow: hidden;
+}
+
+.main-texto {
+    padding: 0px 5px 10px 20px;
+}
+
+.main-texto h1 {
+    margin-top:30px;
+    font-size: 120px;
+    letter-spacing: 7px;
+}
+
+.main-texto h4 {
+    font-size: 26px;
+}
+
+.botoes{
+    margin-top:80px;
+    display: flex;
+}
+
+.botao{
+    padding:25px 30px;
+    margin-right:20px;
+    border-radius:33px;
+    font-weight: 200;
+    font-size:26px;
+    line-height: 26px;
+}
+
+.botao:last-child{
+    margin-right: 0;
+}
+
+.botao.padrao{
+    background-color: var(--cor-botao-padrao);
+}
+
+.botao.vermelho{
+    background-color: var(--cor-vermelho);
+}
+
+.main-capa {
+    background-image: url("imgs/50cent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1;
+    height: 79%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    background-color: var(--cor-padrao-1);
+    padding: 20px;
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.logo>span {
+    color: var(--cor-vermelho);
+}
+
+.separator>span {
+    margin-right: 15px;
+    padding-right: 17px;
+}
+
+.separator.border>span {
+    border-right: var(--cor-vermelho) solid 3px;
+}
+
+.separator>span:last-child {
+    border-right: none;
+}
+
+.my-auto {
+    margin-block: auto;
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.text-red {
+    color: var(--cor-vermelho);
+}
